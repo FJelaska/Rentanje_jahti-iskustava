@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in · Yolo</title>
+    <link rel="stylesheet" href="../../assets/css/login_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/login.js"></script>
+</head>
+<body>
+
+<div class="login-container">
+    <img src="../../assets/img/log1.jpg" alt="Yolo ship" class="login-logo">
+
+    <h1>Sign in to Yolo</h1>
+
+    <form id="loginForm">
+        <label>Username or email address</label>
+        <input type="text" id="username" required>
+
+        <label>Password</label>
+        <input type="password" id="password" required>
+
+        <div class="options">
+            <label class="remember">
+                <input type="checkbox" id="rememberMe">
+                Remember me
+            </label>
+            <a href="#" class="forgot">Forgot password?</a>
+        </div>
+        
+        <button type="submit">Sign in</button>
+        <p class="error" id="errorMsg"></p>  
+    </form>
+
+    <div class="register-box">
+        <span>New to Yolo?&nbsp;</span>
+        <a href="../Login_Registracija_Yolo/register_index.html">Create an account</a>
+    </div>
+</div>
+</body>
+</html>

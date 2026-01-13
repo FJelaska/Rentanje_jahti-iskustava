@@ -1,0 +1,1112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+.container {
+    padding-left: 135px;
+    padding-right: 135px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 68px));
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.maxw {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@font-face {
+    font-family: Rische;
+    src: url(/assets/fonts/rische.otf);
+}
+@font-face {
+    font-family: Work Sans;
+    src: url(/assets/fonts/WorkSans.ttf);
+}
+header > div{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 26px;
+}
+.menu {
+    position: absolute;
+    margin-top: 48px;
+    margin-left: 64px;
+    order: 1;
+    transform: scale(1.2);
+    transform-origin: center;
+}
+.menuMob {
+    position: absolute;
+    visibility: hidden;
+    order: 2;
+}
+.logo{
+    padding-left: 18px;
+    order: 3;
+    margin: 0 auto;
+    transform:scale(1.2);
+    transform-origin: center;
+}
+.section1 {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("../img/val.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.section1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.content {
+    position: relative;
+    z-index: 1;
+    padding-top: 352px;
+}
+.scroller {
+    position: absolute;
+    top: 90%;
+    left: 43.75%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.naslov1{
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.naslovYolo{
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 110%;
+    padding-bottom: 20px;
+    margin-left: -15px;
+}
+.underYolo{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 160%;
+    color: #707070;
+}
+.line1,.line2,.line3,.line4,.line5{
+    padding-bottom: 80px;
+}
+.line1::after,
+.line2::after,
+.line3::after,
+.line4::after,
+.line5::after{
+    content: "";
+    position: absolute;
+    width: 668px;
+    height: 1px;
+    background: #E4E4E4;
+    margin-top: 40px;
+}
+.flexv1{
+    margin-bottom: 24px;
+    display: flex;
+    gap: 16px;
+}
+.lorem{
+    width: 668px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.5px;
+    line-height: 160%;
+    letter-spacing: -0.01em;
+    color: #707070;
+}
+.flexv1 p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #707070;
+}
+.flexv1 h4{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 160%;
+    color: #000000;
+}
+.shortcut h4{
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.shortcut p{
+    margin-top: 8px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #707070;   
+}
+.basic{
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.specifications{
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    gap: 109px;
+}
+.specifications > div div{
+    margin-bottom: 25px;
+    display: flex;
+    gap: 16px;
+}
+.specifications p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    align-items: center;
+    color: #000000;
+}
+.horsepower > div h5{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    align-items: center;
+    color: #000000;
+}
+.horsepower{
+    padding-top: 40px;
+    display: flex;
+    gap: 64px;
+    margin-left: 20px;
+}
+.horsepower > div p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 160%;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #707070;
+}
+.flexv2{
+    display: flex;
+    gap: 100px;
+}
+.section2{
+    padding-top: 163px;
+}
+.yacht {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+.yacht1{
+    padding-top: 120px;
+    width: 670px;
+    height: 713px;
+}
+.sections{
+    padding-top: 180px;
+}
+.blueprint{
+    margin-left: 70px;
+    margin-top: -80px;
+    width: 1168px;
+    height: 339px;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+.slider ul{
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+.slider > ul li a{
+    text-decoration: none;
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    opacity: 0.5;  
+}
+.color{
+    color: #000000;
+}
+.image-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.image-overlay img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+}
+.nav.prev { 
+    left: 40px;
+}
+.nav.next { 
+    right: 40px;
+}
+.exterior{
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 110%;
+    align-items: center;
+    color: #000000;
+    margin: -50px 0 40px 20px;
+}
+.flexv3{
+    margin-left: 70px;
+    display: flex;
+    gap: 32px;
+}
+.main{
+    width: 768px;
+    height: 508px;
+}
+.first{
+    width: 368px;
+    height: 238px;
+}
+.second{
+    width: 368px;
+    height: 238px;
+    margin-top: 29px;
+}
+.relative{
+    position: relative;
+}
+.all-pictures {
+    display: inline-block;
+    text-decoration: none;
+}
+.all{
+    left: 50%;
+    bottom: 11%;
+    position: absolute;
+    width: 166px;
+    height: 48px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.all img{
+    object-fit: cover;
+    cursor: pointer;
+}
+.top{
+    padding-top: 64px;
+}
+.cabins{
+    padding-bottom: 40px;
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 110%;
+    align-items: center;
+    color: #000000;
+    margin-top: -50px;
+}
+.gap{
+    gap: 32px;
+}
+.section4{
+    margin-top: 150px;
+}
+.saloon{
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 110%;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin-top: -20px;
+}
+.div1,.div2,.div3{
+    padding-top: 88px;
+    display: flex;
+    justify-content: center;
+    gap: 132px;
+}
+.slika1{
+    width: 100%;
+    height: 440px;
+}
+.slika2{
+    width: 476px;
+    height: 540px;
+}
+.div2{
+    padding-top: 201px;
+}
+.dining{
+    padding-bottom: 219px;
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    align-items: center;
+    color: #000000;
+    margin-left: 20px;
+}
+.dining2{
+    margin-top: -100px;
+    margin-left: -150px;
+    width: 640px;
+    height: 640px;
+}
+.dining3{
+    margin-top: -100px;
+    width: 326px;
+    height: 460px;
+}
+.solo{
+    display: flex;
+    justify-content: left;
+    margin-top: 90px;
+    margin-left: 50px;
+    gap: 100px;
+}
+.dining4{
+    width: 568px;
+    height: 376px;
+}
+.dining5{
+    width: 568px;
+    height: 376px;
+}
+.mediteran{
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    align-items: center;
+    text-align: right;
+    color: #000000;
+    padding-bottom: 139px;
+    margin-right: 50px;
+}
+.jelo1{
+    width: 568px;
+    height: 376px;
+}
+.div3{
+    margin-top: 50px;
+}
+.lounge{
+    margin-bottom: 180px;
+    height: 290px;
+}
+.konobar2{
+    width: 568px;
+    height: 340px;
+}
+footer {
+    background: rgba(1, 49, 170, 0.8);
+    backdrop-filter: blur(40px);
+    width: auto;
+}
+.yolo2 {
+    transform: scale(1.3);
+    transform-origin: center;
+    grid-column-start: 1;
+    padding-top: 50px;
+}
+.lists {
+    display: flex;
+    gap: 360px;
+    grid-column-start: 1;
+    padding-top: 80px;
+}
+.hello {
+    font-family: "Rische";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+    color: #ffffff;
+    padding-bottom: 20px;
+    width: 200%;
+}
+.list1 {
+    list-style: none;
+    font-family: "Rische";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 170%;
+    width: 200%;
+}
+.list1 > li > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.agency {
+    width: 300px;
+    height: 84px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.lists::after {
+    content: "";
+    width: 100%;
+    background: #4b68b1;
+    height: 1px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: -130px;
+}
+.flex {
+    margin-top: 110px;
+    grid-column-start: 1;
+    display: flex;
+    gap: 450px;
+    padding-bottom: 50px;
+}
+.copyright{
+    padding-top: 30px;
+    transform: scale(1.2);
+    transform-origin: center;
+}
+.made {
+    padding-top: 20px;
+}
+.lista2 {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    width: max-content;
+    padding-top: 30px;
+}
+.lista2 > li > a {
+    text-decoration: none;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+@media only screen and (max-width: 1260px) {
+    .lists{
+      gap: 60px;
+    }
+    .flex{
+      gap: 250px;
+    }
+    .lista2{
+      display: block;
+    }
+    .lists::after {
+      width: 766px;
+    }
+    .flexv2{
+        display: block;
+    }
+    .yacht{
+        display: flex;
+        justify-content: center;
+    }
+    .yacht1 {
+        padding-top: 40px;
+    }
+    .blueprint {
+        width: 702px;
+        height: 241px;
+    }
+    .slider > ul li a{
+        font-size: 20px;
+    }
+    .flexv3{
+        display: block;
+    }
+    .twin{
+        display: flex;
+        gap: 10px;
+    }
+    .second{
+        margin-top: 0px;
+    }
+    .main {
+        width: 746px;
+    }
+    .specifications {
+        display: block;
+    }
+    .flexv1{
+        display: block;
+    }
+    .top {
+        padding-top: 35px;
+    }
+    .gap > div{
+        padding-bottom: 80px;
+    }
+  }
+@media only screen and (max-width: 1024px) {
+    .dining, .mediteran{
+        display: none;
+    }
+    .jelo1{
+        padding-top: 200px;
+    }
+    .dining3{
+        padding-top: 100px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .naslov1{
+        font-size: 40px;
+    }
+    .container {
+        padding-left: 100px;
+    }
+    .lorem {
+        width: 528px;
+        font-size: 11px;
+    }
+    .specifications p{
+        font-size: 13px;
+    }
+    .cabins{
+        font-size: 40px;
+    }
+    .saloon{
+        font-size: 40px;
+    }
+    .exterior{
+        font-size: 40px;
+    }
+    .blueprint {
+        width: 623px;
+        height: 206px;
+    }
+    .slider > ul li a {
+        font-size: 15px;
+    }
+    .main {
+        width: 663px;
+        height: 425px;
+    }
+    .first {
+        width: 333px;
+        height: 208px;
+    }
+    .second {
+        width: 320px;
+        height: 208px;
+    }
+    .all{
+        width: 143px;
+        height: 38px;
+    }
+    .yacht1 {
+        width: 560px;
+        height: 640px;
+    }
+    .naslovYolo{
+        font-size: 40px;
+    }
+    .lists {
+      display: block;
+    }
+    .parent{
+      display: flex;
+    }
+    .lists::after {
+      margin-top: 115px;
+      width: 566px;
+    }
+    .list1, .parent{
+      padding-bottom: 50px;
+    }
+    .flex{
+      display: block;
+    }
+    .made{
+      padding-bottom: 40px;
+    }  
+}
+ @media only screen and (max-width: 768px) {
+    .menuMob {
+      visibility: visible;
+      margin-top: 48px;
+      margin-left: 64px;
+    }
+    .menu {
+      visibility: hidden;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    .scroller{
+        display: none;
+    }
+    .line1::after, .line2::after, .line3::after, .line4::after, .line5::after {
+        width: 510px;
+    }
+    .div1, .div2, .div3 {
+        padding-top: 32px;
+        display: block;
+    }
+    .section4 > div{
+        text-align: center;
+    }
+    .div3, .solo {
+        padding-top: 32px;
+        margin-top: 0px;
+    }
+    .jelo1 {
+        padding-top: 0;
+    }
+    .lounge{
+        margin-top: 32px;
+    }
+    .konobar, .dining3, .slika2{
+        padding-top: 32px;
+    }
+    .lists {
+      display: block;
+    }
+    .parent{
+      display: flex;
+    }
+    .lists::after {
+      margin-top: 115px;
+      width: 366px;
+    }
+    .list1, .parent{
+      padding-bottom: 50px;
+    }
+    .flex{
+      display: block;
+    }
+    .lorem {
+        width: 390px;
+        font-size: 10px;
+    }
+    .twin {
+        display: block;
+    }
+    .second {
+        width: 333px;
+    }
+    .all {
+        left: 30%;
+    }
+    .main {
+        width: 459px;
+        height: 335px;
+    }
+    .blueprint {
+        width: 453px;
+        height: 152px;
+    }
+    .slider ul {
+        gap: 20px;
+    }
+    .made{
+      padding-bottom: 40px;
+    }
+    .container{
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .container{
+      padding-left: 50px;
+    }
+    .naslov1 {
+        font-size: 30px;
+    }
+    .naslovYolo {
+        font-size: 30px;
+    }
+    .underYolo{
+        font-size: 11px;
+        margin-top: 12px;
+    }
+    .line1::after, .line2::after, .line3::after, .line4::after, .line5::after {
+        width: 379px;
+    }
+    .flexv1 h4{
+        font-size: 15px;
+    }
+    .flexv1 p{
+        font-size: 11px;
+    }
+    .yacht1 {
+        width: 477px;
+        height: 567px;
+        padding-left: 50px;
+    }
+    .blueprint {
+        width: 323px;
+        height: 111px;
+    }
+    .hello{
+      margin-top: -100px;
+    }
+  }
+@media only screen and (max-width: 425px) {
+    .hello{
+      margin-top: -100px;
+    }
+    .lists::after {
+      margin-top: 115px;
+      width: 285px;
+    }
+    .container{
+      padding-left: 30px;
+    }
+    .naslov1 {
+        font-size: 25px;
+    }
+    .naslovYolo {
+        font-size: 25px;
+    }
+    .flexv1 h4 {
+        font-size: 13px;
+    }
+    .flexv1 p {
+        font-size: 10px;
+    }
+    .lorem {
+        width: 297px;
+        font-size: 10px;
+    }
+    .basic{
+        font-size: 20px;
+    }
+    .specifications p {
+        font-size: 11px;
+    }
+    .horsepower > div h5 {
+        font-size: 9px;
+    }
+    .horsepower > div p {
+        font-size: 12px;
+    }
+    .slider > ul li a {
+        font-size: 13px;
+    }
+    .exterior {
+        font-size: 30px;
+    }
+    .main {
+        width: 334px;
+        height: 245px;
+    }
+    .cabins {
+        font-size: 30px;
+    }
+    .saloon {
+        font-size: 30px;
+    }
+    .line1::after, .line2::after, .line3::after, .line4::after, .line5::after {
+        width: 298px;
+    }
+    .slider{
+        padding-left: 50px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .menuMob{
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .hello{
+      margin-top: -100px;
+      font-size: 27px;
+    }
+    .lists::after {
+      width: 245px;
+    }
+    .list1{
+      font-size: 20px;
+    }
+    .lorem {
+        width: 211px;
+        font-size: 9px;
+    }
+    .blueprint {
+        width: 276px;
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .naslov1 {
+        font-size: 20px;
+    }
+    .line1::after, .line2::after, .line3::after, .line4::after, .line5::after {
+        width: 213px;
+    }
+    .horsepower > div h5 {
+        font-size: 7px;
+        padding-bottom: 10px;
+    }
+    .blueprint {
+        width: 256px;
+        height: 84px;
+    }
+    .main {
+        width: 351px;
+        height: 237px;
+    }
+    .first {
+        width: 276px;
+        height: 176px;
+    }
+    .second {
+        width: 274px;
+        height: 175px;
+    }
+    .bed {
+        width: 300px;
+    }
+}
+
+.popUp{
+    position: absolute;
+    z-index: 1;
+    width: 0%;
+    background-color: #345ABB;
+    height: 100vh;
+    transition: width 0.5s ease;
+    overflow: hidden;
+  }
+  .sectMain{
+    position: relative;
+    z-index: 1;
+  }
+  header > div{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 26px;
+  }
+  .menu {
+    position: absolute;
+    margin-top: 48px;
+    margin-left: 64px;
+    order: 1;
+  }
+  .menuMob {
+    position: absolute;
+    visibility: hidden;
+    order: 2;
+  }
+  .logo{
+    order: 3;
+    margin: 0 auto;
+  }
+  .sectionPopUp{
+    padding-top: 177px;
+    position: relative;
+  }
+  .parent{
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .listaPopUp{
+    padding-top: 32px;
+    display: flex;
+    gap: 24px;
+  }
+  
+  ul > li{
+    list-style: none;
+  }
+  .listPopUp li{
+    width: 400px;
+  }
+  .listPopUp li a{
+    text-decoration: none;
+    color: white;
+    font-family: Rische;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 172%;
+    letter-spacing: 0.03em;
+  }
+  .listaPopUp li a{
+    text-decoration: none;
+    color: white;
+    font-family: Rische;
+    opacity: 0.8;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+  }
+  .profile-button{
+  position: absolute;
+  right: 150px;
+  bottom: 50px;
+  text-decoration: none;
+  color: white;
+  font-family: Rische;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 172%;
+  letter-spacing: 0.03em;
+}
+  @media only screen and (max-width: 1024px){
+  
+  }
+  @media only screen and (max-width: 900px){
+  .parent {
+      padding-bottom: 50px;
+      display: block;
+  }
+  }
+  @media only screen and (max-width: 768px) {
+    .menuMob{
+        visibility: visible;
+        margin-top: 48px;
+        margin-left: 64px;
+    }
+    .menu{
+        visibility: hidden;
+    }
+    .listPopUpli a{
+        font-size: 30px;
+    }
+    .listaPopUp > li a{
+        font-size: 12px;
+    }
+    .container {
+        padding-left: 64px;
+    }
+  }
+  @media only screen and (max-width: 425px){
+  
+  }
+  @media only screen and (max-width: 375px){
+    .menuMob{
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .container {
+        padding-left: 20px;
+    }
+    .listPopUp li a {
+        font-size: 27px;
+    }
+  }
+  @media only screen and (max-width: 320px){
+    .listPopUp li a {
+        font-size: 24px;
+    }
+    .listaPopUp > li a {
+        font-size: 10px;
+    }
+    .listaPopUp{
+        padding-top: 10px;
+    }
+  }
