@@ -7,7 +7,6 @@
   <title>Create account · Yolo</title>
   <link rel="stylesheet" href="../../assets/css/register.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="../../js/register.js"></script>
 </head>
 <body>
 
@@ -25,38 +24,39 @@
       <h2>Sign up for Yolo</h2>
       <hr>
 
-      <form>
+      <form method="POST" action="/register">
         <label>First name</label>
-        <input type="text" required>
+        <input type="text" name="first_name" required>
 
         <label>Last name</label>
-        <input type="text" required>
+        <input type="text" name="last_name" required>
 
         <label>Date of birth</label>
-        <input type="date" required>
+        <input type="date" name="birth_date" required>
 
         <label>Gender</label>
-        <select>
-          <option>Male</option>
-          <option>Female</option>
+        <select name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
         </select>
 
         <label>Country</label>
-        <input type="text" required>
+        <input type="text" name="country" required>
 
         <label>Email*</label>
-        <input type="email" required>
+        <input type="email" name="email" required>
 
         <label>Password*</label>
-        <input type="password" required>
+        <input type="password" name="password" required>
         <p>Password should be at least 15 characters OR at least 8 characters including a number and a lowercase letter.</p>
 
-        <button>Create account</button>
+        <button type="submit">Create account</button>
       </form>
 
-      <p class="privacy">By creating an account, you agree to the <a href="../Tof_page/tos_index.html">Terms of Service</a>. For more information about Yolo's privacy practices, see the Yolo <a href="../404-page/404_index.html"> Privacy Policy</a>.</p>
+      <p class="privacy">By creating an account, you agree to the <a href="/pages/Tof_page/tos_index.html">Terms of Service</a>. For more information about Yolo's privacy practices, see the Yolo <a href="/pages/404-page/404_index.html"> Privacy Policy</a>.</p>
       <p class="signin-link">
-        Already have an account?&nbsp;&nbsp;<a href="../Login_Registracija_Yolo/login_index.html">Sign in</a>
+        Already have an account?&nbsp;&nbsp;<a href="/login">Sign in</a>
       </p>
 
     </div>

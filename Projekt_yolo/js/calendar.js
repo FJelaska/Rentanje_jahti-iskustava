@@ -91,16 +91,55 @@ clearBtn.addEventListener('click', () => {
   updateSummary();
 });
 
+function showBookingPopup(message) {
+  const msgEl = popup.querySelector(".popup-message") || popup.querySelector("p");
+  if (msgEl) msgEl.textContent = message;
+  popup.classList.remove("hidden");
+}
 
-reserveBtn.addEventListener('click', () => {
-  const nights = getNights();
-  if (nights <= 0) {
-    checkinInput.value = '';
-    checkoutInput.value = '';
-    updateSummary();
+reserveBtn.addEventListener("click", async () => {
+  if (!checkinInput.value || !checkoutInput.value) return;
+
+  const body = new URLSearchParams({
+    start_date: checkinInput.value,
+    end_date: checkoutInput.value
+  });
+
+  let res;
+  try {
+    res = await fetch("/api/reserve", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body,
+      redirect: "manual"
+    });
+  } catch (e) {
+    showBookingPopup("Network error. Try again.");
     return;
   }
-  popup.classList.remove('hidden');
+
+  // if not logged in, backend usually redirects to /login
+  if ([0, 301, 302, 303, 307, 308].includes(res.status)) {
+    window.location.href = "/login";
+    return;
+  }
+
+  // if backend returns 401 for API
+  if (res.status === 401) {
+    window.location.href = "/login";
+    return;
+  }
+
+  const contentType = res.headers.get("content-type") || "";
+  if (!contentType.includes("application/json")) {
+    window.location.href = "/login";
+    return;
+  }
+
+  const data = await res.json();
+
+  if (res.ok && data.ok) showBookingPopup("Reservation confirmed!");
+  else showBookingPopup(data.message || "Reservation failed.");
 });
 
 popupClose.addEventListener('click', () => {
