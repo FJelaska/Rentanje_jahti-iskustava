@@ -10,7 +10,8 @@ Version 1.0
 - HTML
 - CSS
 - JavaScript
-- (add others)
+- Node.js
+- PostgreSql
 
 ## How to run
 1. Download the project
