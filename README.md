@@ -15,7 +15,7 @@ Version 1.0
 
 ## How to run
 1. Download the project
-2. Open `index.html` in a browser
+2. Run Node.js commands in backend folder
 
 ## Authors
 - Frane Jelaska
