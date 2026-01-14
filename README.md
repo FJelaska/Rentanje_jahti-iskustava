@@ -1,4 +1,4 @@
-# Yacht/experience renting YOLO – Group Project (PI)
+# Yacht/experience renting YOLO – Group Project (Soft. Eng.)
 
 ## Project description
 This project is a web application for renting yachts and experiences.
